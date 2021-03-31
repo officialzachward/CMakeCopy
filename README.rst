@@ -1,4 +1,4 @@
-CMake
+CMakeCopy (A copy of KitWare's build system generator) - Zachary Ward
 *****
 
 Introduction
