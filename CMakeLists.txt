@@ -36,18 +36,19 @@ install(FILES "${PROJECT_BINARY_DIR}/TutorialConfig.h"
   DESTINATION include
   )
 
+# enable testing
 enable_testing()
 
-# checking if application runs
+# does the application run
 add_test(NAME Runs COMMAND Tutorial 25)
 
-# does the usage message work right?
+# does the usage message work?
 add_test(NAME Usage COMMAND Tutorial)
 set_tests_properties(Usage
-  PROPERTIES PASS_REGULAR_EXPRESSION "USAGE:.*number"
+  PROPERTIES PASS_REGULAR_EXPRESSION "Usage:.*number"
   )
 
-# create a function to make adding tests easier
+# define a function to simplify adding tests
 function(do_test target arg result)
   add_test(NAME Comp${arg} COMMAND ${target} ${arg})
   set_tests_properties(Comp${arg}
@@ -55,7 +56,7 @@ function(do_test target arg result)
     )
 endfunction(do_test)
 
-# add in tests for sqrt
+# do a bunch of result based tests
 do_test(Tutorial 4 "4 is 2")
 do_test(Tutorial 9 "9 is 3")
 do_test(Tutorial 5 "5 is 2.236")
