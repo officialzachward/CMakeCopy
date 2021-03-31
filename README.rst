@@ -4,7 +4,7 @@ CMakeCopy (A copy of KitWare's build system generator) - Zachary Ward
 Introduction
 ============
 
-CMake is a cross-platform, open-source build system generator.
+CMakeCopy is a cross-platform build system generator.
 For full documentation visit the `CMake Home Page`_ and the
 `CMake Documentation Page`_. The `CMake Community Wiki`_ also
 references useful guides and recipes.
@@ -13,7 +13,7 @@ references useful guides and recipes.
 .. _`CMake Documentation Page`: https://cmake.org/documentation
 .. _`CMake Community Wiki`: https://gitlab.kitware.com/cmake/community/-/wikis/home
 
-CMake is maintained and supported by `Kitware`_ and developed in
+CMake (not CMakeCopy) is maintained and supported by `Kitware`_ and developed in
 collaboration with a productive community of contributors.
 
 .. _`Kitware`: http://www.kitware.com/cmake
